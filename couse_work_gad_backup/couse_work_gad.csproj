@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{136BDF9A-6820-41FD-966D-DFCF205BC222}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>couse_work_gad</RootNamespace>
+    <AssemblyName>couse_work_gad</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addairline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addairline.Designer.cs">
+      <DependentUpon>Addairline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addairport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addairport.Designer.cs">
+      <DependentUpon>Addairport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addflight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addflight.Designer.cs">
+      <DependentUpon>Addflight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customerdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customerdetails.Designer.cs">
+      <DependentUpon>Customerdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletecustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletecustomer.Designer.cs">
+      <DependentUpon>deletecustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeREG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeREG.Designer.cs">
+      <DependentUpon>EmployeeREG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loadingwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loadingwindow.Designer.cs">
+      <DependentUpon>Loadingwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logpage.Designer.cs">
+      <DependentUpon>Logpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mybooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mybooking.Designer.cs">
+      <DependentUpon>Mybooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staffdash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staffdash.Designer.cs">
+      <DependentUpon>Staffdash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1_Home.Designer.cs">
+      <DependentUpon>UserControl1_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_cargo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_cargo.Designer.cs">
+      <DependentUpon>UserControl_cargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_service_traval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_service_traval.Designer.cs">
+      <DependentUpon>UserControl_service_traval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control_about_us.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control_about_us.Designer.cs">
+      <DependentUpon>user_control_about_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control_promotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control_promotion.Designer.cs">
+      <DependentUpon>user_control_promotion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addairline.resx">
+      <DependentUpon>Addairline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addairport.resx">
+      <DependentUpon>Addairport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addflight.resx">
+      <DependentUpon>Addflight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customerdetails.resx">
+      <DependentUpon>Customerdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletecustomer.resx">
+      <DependentUpon>deletecustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeREG.resx">
+      <DependentUpon>EmployeeREG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loadingwindow.resx">
+      <DependentUpon>Loadingwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logpage.resx">
+      <DependentUpon>Logpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mybooking.resx">
+      <DependentUpon>Mybooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staffdash.resx">
+      <DependentUpon>Staffdash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1_Home.resx">
+      <DependentUpon>UserControl1_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_cargo.resx">
+      <DependentUpon>UserControl_cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_service_traval.resx">
+      <DependentUpon>UserControl_service_traval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control_about_us.resx">
+      <DependentUpon>user_control_about_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control_promotion.resx">
+      <DependentUpon>user_control_promotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-ahmed-muntasir-912050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-ahmed-muntasir-9120501.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-quotes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4136591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41365911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41365912.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42938.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844435_home_house_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\134135_flights_plane_flight_departing_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9055078_bxs_book_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2203550_discount_price_promotion_tag_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41365913.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41365914.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41365915.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41365916.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1490.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\388.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3881.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3882.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\747.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44989841_2140899769293950_8596279542891413504_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n3i0_aph4_220505.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-chevanon-photography-325044.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-chevanon-photography-3250441.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-chevanon-photography-3250442.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-shot-tree-savanna-plains-with-blue-sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shifaaz-shamoon-qtbV_8P_Ksk-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mohamed-thasneem-3bAblStd-IY-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC_A320_IFE_Image_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mohamed-thasneem-3bAblStd-IY-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\martin-jernberg-nE2gf1scItI-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-alt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joshua-ang-Gf_KqXHU-PY-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorasak-_UIN-pFfJ7c-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorasak-_UIN-pFfJ7c-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eugene-aikimov-azqdBkIHVo0-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eugene-aikimov-azqdBkIHVo0-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lukas-kloeppel-2416653.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lukas-kloeppel-24166531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-pixabay-37650.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6619614_analytics_monitoring_performance_seo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216117_card_business_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5443038_christmas_promotion_sale_xmas_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216492_delete_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8697465.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\964489.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290102_control panel_dashboard_gauge_measure_meter_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-flight-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\900717.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2075799_repeat_return_round_trip_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3383441_airfield_airplane_airport_flight_runway_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7921529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1084901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8124115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9035973_search_circle_sharp_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9035973_search_circle_sharp_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6639082_avatar_delete_profile_remove_unfollow_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
